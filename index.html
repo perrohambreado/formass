@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form class="survey-form">
+            <h1>Video Game Survey</h1>
+            
+            <label for="favorite-game">Favorite Game:</label>
+            <input type="text" id="favorite-game" name="favorite-game">
+
+            <fieldset>
+                <legend>Favorite Console</legend>
+                <div class="column-container"> <!-- Mueve este div aquí -->
+                    <label><input type="radio" name="favorite-console" value="Switch"> Switch</label>
+                    <label><input type="radio" name="favorite-console" value="PS5"> PS5</label>
+                    <label><input type="radio" name="favorite-console" value="Xbox"> Xbox</label>
+                    <label><input type="radio" name="favorite-console" value="PC"> PC</label>
+                    <label><input type="radio" name="favorite-console" value="Other"> Other</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Where Have You Played?</legend>
+                <div class="column-container">
+                    <label><input type="checkbox" name="console-location" value="Switch"> Switch</label>
+                    <label><input type="checkbox" name="console-location" value="PS5"> PS5</label>
+                    <label><input type="checkbox" name="console-location" value="Xbox"> Xbox</label>
+                    <label><input type="checkbox" name="console-location" value="PC"> PC</label>
+                    <label><input type="checkbox" name="console-location" value="Mobile"> Mobile</label>
+                    <label><input type="checkbox" name="console-location" value="Other"> Other</label>
+                </div>
+            </fieldset>
+
+            <label for="last-played">When was the last time you played?</label>
+            <input type="date" id="last-played" name="last-played">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+            
